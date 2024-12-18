@@ -1,8 +1,11 @@
 name: run main.py
 
+#on:
+#  schedule:
+#    - cron: '* * * * *' # Run every minute
 on:
   schedule:
-    - cron: '* * * * *' # Run every minute
+    - cron: '0 * * * *'  # Runs every hour at the start of the hour
 
 jobs:
   build:
